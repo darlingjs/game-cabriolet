@@ -1,0 +1,19 @@
+<div class="page">
+  <div style="background-image: url('assets/pages/menu.png');" class="background-image-size"></div>
+  <div class="page-content">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="#/map">Game</a></li>
+      <li><a href="#/scoreboard">Scoreboard</a></li>
+      <!--<li><a href="#/status">Status</a></li>-->
+      <li><a href="#/about">About</a></li>
+    </ul>
+    <div ng-cloak> Hello {{ userName }}! You have {{ myScore }} scores.</div>
+    <div ng-cloak ng-show="isNeedToLogin">
+      <p>
+        Login with Facebook to store your scores.
+      </p>
+      <fb-login onLogin="onLoginHandler()"></fb-login>
+    </div>
+  </div>
+</div>
